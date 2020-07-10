@@ -1,0 +1,19 @@
+{
+    "Product_name" : "出品タイトル",
+    "Category" : "カテゴリー",
+    "Login" : "ログイン",
+    "Login." : "ログインしました",
+    "Logout" : "ログアウト",
+    "Logout." : "ログアウトしました",
+    "Edited." : "修正しました",
+    "Edit." : "修正",
+    "New_TalkLog" : "最新トーク履歴",
+    "Register." : "登録",
+    "Registered." : "登録しました",
+    "Remember Me" : "パスワードを記憶する",
+    "Invalid operation was performed." : "無効なURLです。",
+    "categories_id": "カテゴリー",
+    "Profile Edit" : "登録情報更新",
+    "Uploaded." : "登録済みの画像",
+    "ProductDelete." : "出品情報削除します"
+}
