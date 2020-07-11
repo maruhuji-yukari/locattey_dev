@@ -317,6 +317,7 @@ ul {
   width: 100%;
   min-height: 550px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   margin-bottom: 15px; }
@@ -351,9 +352,10 @@ ul {
   background: #efefef;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   display: flex;
+    justify-content: center;
   align-items: start;
   flex-direction: column;
   border-radius: 5px;
@@ -676,10 +678,7 @@ ul {
     border-radius: 5px;
     transition: 0.25s;
     box-shadow: 2px 2px #777777;
-    /*position: relative;*/
-    /*top: 15px;*/
-    /*right: calc(-80% - 20px);*/
-      margin: 15px auto;
+    margin-right: 15px;
   }
 
   .register_submit:hover {
@@ -1365,6 +1364,14 @@ ul {
 
 .uploads_list{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.uploads_list-image{
+    width: 150px;
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .section_upload{
@@ -1400,3 +1407,27 @@ ul {
     box-sizing: border-box;
 }
 
+.submit_delete{
+    width: 100px;
+    height: 50px;
+    background: #bfbfbf;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    transition: 0.25s;
+    color: #333333;
+    box-shadow: 2px 2px #777777;
+    line-height: 50px;
+}
+
+.submit_delete:hover{
+    background: #333333;
+    color: #bfbfbf;
+}
+
+.btn_space{
+    display: flex;
+    justify-content: center;
+}
