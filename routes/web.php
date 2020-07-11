@@ -44,3 +44,6 @@ Route::post('member_trade/{id}/editUploads','Member\ProductsController@editUploa
 
 Route::get('member/register/edit','Member\MypageController@edit')->name('memberEdit');
 Route::post('member/register/update','Member\MypageController@update')->name('memberUpdate');
+
+Route::get('member/{id}/remove','Member\ProductsController@remove')->name('tradeRemove');
+Route::post('member/{id}/delete','Member\ProductsController@delete')->name('tradeDelete');

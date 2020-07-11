@@ -12,9 +12,10 @@ class Categories extends Model
         'category_name',
     ];
 
+    public $primaryKey = 'categories.id';
+
     public function product(){
         return $this->hasMany('App\Models\Categories')->orderBy('id','DESC');
     }
 
-    public $primaryKey = 'id';
 }

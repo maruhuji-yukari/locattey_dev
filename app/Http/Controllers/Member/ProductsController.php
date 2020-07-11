@@ -190,13 +190,28 @@ class ProductsController extends Controller
     //出品情報を削除する
     //===================================
 
-    //確認ページを描写してから削除
-
     //削除確認ページ(view)
-    public function deletePreview($id){
+    public function remove($id){
         $DBdata = Product::find($id);
+        $categories = Categories::all();
+        $users_id = Auth::id();
+        $product_images = ['product_image1','product_image2', 'product_image3', 'product_image4', 'product_image5'];
+        //該当カテゴリーid取得
+        $c_id = $DBdata->categories_id;
+        //該当カテゴリー名取得
+        $c_name = $categories->where('id', $c_id);
 
-        return view();
+        return view('member/tradeRemove',compact('DBdata','categories','product_images','users_id','c_name'));
+    }
+
+
+    //出品情報削除
+    public function  delete(Request $request,$id){
+        //該当するデータを取得
+        $products = Product::find($id);
+        //delete(物理削除)
+        $products->fill($request->all())->delete();
+        return redirect('member/trade/list')->with('flash_message', __('CompleteDelete'));
     }
 }
 

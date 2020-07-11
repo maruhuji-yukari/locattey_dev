@@ -79,7 +79,9 @@
                 @enderror
             @endforeach
         </div>
-        <input type="submit" class="register_submit" value="{{ __('Register.') }}">
+        <div class="btn_space">
+            <input type="submit" class="register_submit" value="{{ __('Register.') }}">
+        </div>
     </form>
 @endsection
 @include('layouts.member.main_menu')

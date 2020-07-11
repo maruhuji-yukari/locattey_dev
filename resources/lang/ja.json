@@ -15,5 +15,8 @@
     "categories_id": "カテゴリー",
     "Profile Edit" : "登録情報更新",
     "Uploaded." : "登録済みの画像",
-    "ProductDelete." : "出品情報削除します"
+    "ProductDelete." : "出品情報削除します",
+    "CompleteDeleted." : "完全に消去されます。ご注意ください。",
+    "Deleted." : "削除",
+    "CompleteDelete": "削除しました!"
 }
