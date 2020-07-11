@@ -19,14 +19,8 @@
         </div>
          @endforeach
     </div>
-    <div class="pagination">
-        <ul class="pagination_list">
-            <li class="pagination_list-item">前</li>
-            <li class="pagination_list-item">1</li>
-            <li class="pagination_list-item">2</li>
-            <li class="pagination_list-item">3</li>
-            <li class="pagination_list-item">次</li>
-        </ul>
+    <div class="pagination_space">
+        {{ $products->links() }}
     </div>
 
     <h3 class="main_title"><i class="fas fa-external-link-alt"></i> {{ __('Category') }}</h3>
