@@ -18,5 +18,7 @@
     "ProductDelete." : "出品情報削除します",
     "CompleteDeleted." : "完全に消去されます。ご注意ください。",
     "Deleted." : "削除",
-    "CompleteDelete": "削除しました!"
+    "CompleteDelete": "削除しました!",
+    "bid." : "入札する!",
+    "Please Login." : "入札するにはログインしてください"
 }

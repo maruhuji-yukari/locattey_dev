@@ -38,7 +38,7 @@ ul {
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
+  display: block;
   justify-content: space-around;
   align-content: baseline;
   transition: 0.25s;
@@ -219,13 +219,14 @@ ul {
   transition: all .4s;
   box-sizing: border-box;
   position: relative;
-  left: 85%;
+  left: 92%;
   top: -90px;
   width: 40px;
   height: 32px;
   z-index: 3; }
   @media screen and (max-width: 414px) {
     .menu-trigger {
+        left: 85%;
       display: inline-block; } }
   @media screen and (max-width: 768px) {
     .menu-trigger {
@@ -356,6 +357,10 @@ ul {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  align-items: start;
+>>>>>>> develop
   flex-direction: column;
   align-items: flex-start;
   border-radius: 5px;
@@ -369,7 +374,7 @@ ul {
   .section_img {
     text-align: center;
     vertical-align: top;
-    width: 90%;
+    width: 95%;
     margin: 5px auto;
     display: block; }
   .section_product-name {
@@ -395,8 +400,8 @@ ul {
   margin-right: 0; }
 
 .searchArea {
-  width: 30%;
-  margin-top: 40px; }
+  width: 100%;
+  margin: 30px auto;}
   @media screen and (max-width: 414px) {
     .searchArea {
       width: 100%;
@@ -501,7 +506,11 @@ ul {
     text-align: center;
     color: #efefef; }
 
+<<<<<<< HEAD
 .pagination_space {
+=======
+.pagination_area {
+>>>>>>> develop
   width: 100%;
   padding: 10px;
   box-sizing: border-box; }
@@ -667,6 +676,21 @@ ul {
     border-radius: 5px;
     box-shadow: 2px 2px #777777; }
 
+    .register_input2{
+        width: 100%;
+        height: 50px;
+        display: block;
+        font-size: 18px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border: none;
+        background: #efefef;
+        color: #3c3c3c;
+        border-radius: 5px;
+        box-shadow: 2px 2px #777777;
+        margin-bottom: 15px;
+}
+
   .register_submit {
     width: 100px;
     height: 50px;
@@ -685,7 +709,9 @@ ul {
     background: #f9ffb9;
     border-bottom: 2px solid #777777;
     box-shadow: none;
-    transition: 0.25s; }
+    transition: 0.25s;
+    cursor: grab;
+  }
 
   .register_textarea {
     display: block;
@@ -879,7 +905,7 @@ ul {
 
 .mypage_label {
   width: 70%;
-  margin: 5px auto;
+  margin: 15px auto;
   display: block;
   font-size: 18px; }
   @media screen and (max-width: 414px) {
@@ -1428,6 +1454,171 @@ ul {
 }
 
 .btn_space{
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+.btn_space_edit{
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.submit_bid{
+    width: 95%;
+    height: 50px;
+    background: #bf2b30;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+    border: none;
+    border-radius: 5px;
+    transition: 0.25s;
+    color: #eeeeee;
+    box-shadow: 2px 2px #777777;
+    line-height: 50px;
+}
+
+.submit_bid:hover{
+    background: #efa6a1;
+    color: #333333;
+}
+
+.section_simple{
+    width: 100%;
+}
+
+.trade_table{
+    width: 95%;
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+
+.trade_table th{
+    background: #9bb9b3;
+    text-align: left;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.trade_table tr{
+    min-height:30px;
+    padding:0;
+    background: #efefef;
+    border:2px solid #d6d6d6;
+    height: 50px;
+}
+
+.trade_table-tr{
+    min-height:50px;
+    padding:0;
+    background: #efefef;
+    border:2px solid #d6d6d6;
+}
+
+.trade_table td{
+    width: 80%;
+    padding:0 0 0 15px;
+    box-sizing: border-box;
+}
+
+.trade_table-mini{
+    font-size: 12px;
+}
+
+.trade_table-img1{
+    width: 50%;
+    margin:5px auto;
+    display: block;
+}
+
+.trade_table-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.submit_reUploads{
+    width: 100%;
+    height: 50px;
+    background: #efefef;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    transition: 0.25s;
+    color: #83838d;
+    line-height: 50px;
+    margin: 30px auto;
+    box-shadow: 2px 2px #777777;
+    font-weight: 700;
+}
+
+.section_mypage{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.register_label-icon {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+    background: #efefef;
+    border: 2px solid #777777;
+}
+
+@media screen and (max-width: 414px) {
+    .register_label-file {
+        width: 150px;
+        height: 150px;} }
+@media screen and (max-width: 768px) {
+    .register_label-file {
+        width: 200px;
+        height: 200px;} }
+
+.register_label-file:last-child {
+    margin-right: 0; }
+.register_label-file-active {
+    display: block;
+    width: calc(96% / 3);
+    margin-bottom: 15px;
+    margin-right: 5px;
+    min-height: 100px;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+    background: #efefef;
+    border-radius: 5px;
+    border: 3px dotted #777777;
+    box-shadow: 2px 2px #777777;}
+
+@media screen and (max-width: 414px) {
+    .register_label-file {
+        width: 100%;
+        height: 200px;} }
+@media screen and (max-width: 768px) {
+    .register_label-file {
+        width: 100%;
+        height: 200px;} }
+
+
+.register_label-file-active:last-child {
+    margin-right: 0; }
+
+.password_info{
+    float: right;
+    margin-bottom: 30px;
+    font-size: 14px;
 }

@@ -42,8 +42,8 @@ class ProductsController extends Controller
         $product->categories_id = $request->categories_id;
         $product->users_id = Auth::id();
         $product->trade_flag = 0;
-        $product->created_at = $request->created_at;
-        $product->updated_at = $request->updated_at;
+        $product->created_at = now();
+        $product->updated_at = now();
 
         //upload(1枚目は必須)
         $tmpFile = $request->file('product_image1')->store('images/images');
@@ -102,7 +102,9 @@ class ProductsController extends Controller
         $c_id = $products->categories_id;
         //該当カテゴリー名取得
         $c_name = $categories->where('id', $c_id);
-        return view('member.trade_edit', compact('products', 'categories', 'c_name'));
+        //更新日時変更
+        $updated_at = now();
+        return view('member.trade_edit', compact('products', 'categories', 'c_name','updated_at'));
     }
 
     //=============================

@@ -47,3 +47,5 @@ Route::post('member/register/update','Member\MypageController@update')->name('me
 
 Route::get('member/{id}/remove','Member\ProductsController@remove')->name('tradeRemove');
 Route::post('member/{id}/delete','Member\ProductsController@delete')->name('tradeDelete');
+
+Route::get('trade/{id}','HomeController@simple')->name('tradeSimple');

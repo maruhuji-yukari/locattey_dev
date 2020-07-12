@@ -17,8 +17,7 @@ class MypageController extends Controller
     public function edit(){
         //DBのデータを取得
         $users_info = Auth::user();
-        dd($users_info);
-        return view('member.edit');
+        return view('member.mypage_edit');
     }
 
     //登録情報更新(実装)

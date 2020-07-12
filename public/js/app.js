@@ -56,30 +56,12 @@ $(function(){
 //クリックする箇所　js-click-img
 //変更ターゲット js-change-target
 
-$('.js-click-img1').on('click',function () {
+$('.js_click-target').on('click',function () {
 
     let target = $('.js-change-target');
     target.attr({
-        'src':'img/icon-women.png', //要リファクタ
-        'alt':'1枚目',
-    });
-});
+        'src':'img/icon-women.png',
 
-$('.js-click-img2').on('click',function () {
-
-    let target = $('.js-change-target');
-    target.attr({
-        'src':'img/icon_men.png',　//要リファクタ
-        'alt':'2枚目',
-    });
-});
-
-$('.js-click-img3').on('click',function () {
-
-    let target = $('.js-change-target');
-    target.attr({
-        'src':'img/iconrensyu.png',　//要リファクタ
-        'alt':'2枚目',
     });
 });
 
