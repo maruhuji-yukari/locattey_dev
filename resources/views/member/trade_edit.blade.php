@@ -56,9 +56,11 @@
         @enderror
 
         <label class="register_label">画像:</label>
-        <p class="uploads_text">画像を変更する場合は<a href="{{ route('editImage',$products->id) }}">こちら</a></p>
+        <a href="{{ route('editImage',$products->id) }}"><span class="submit_reUploads">画像を変更する</span></a>
 
-        <div class="btn_space">
+        <input type="text" name="updated_at" hidden value="{{ $updated_at }}">
+
+        <div class="btn_space_edit">
             <input type="submit" class="register_submit" value="{{ __('Edit.') }}">
             <a href="{{ route('tradeRemove',$products->id) }}"><span class="submit_delete">{{ __('Deleted.') }}</span></a>
         </div>

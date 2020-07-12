@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index', 'HomeController@index')->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
@@ -47,3 +47,5 @@ Route::post('member/register/update','Member\MypageController@update')->name('me
 
 Route::get('member/{id}/remove','Member\ProductsController@remove')->name('tradeRemove');
 Route::post('member/{id}/delete','Member\ProductsController@delete')->name('tradeDelete');
+
+Route::get('trade/{id}','HomeController@simple')->name('tradeSimple');
