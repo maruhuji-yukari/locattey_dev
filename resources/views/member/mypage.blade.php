@@ -36,12 +36,25 @@
 {{--            </div>--}}
 {{--            <p class="msg_link3"><a href="talk_list.html">トーク履歴一覧</a></p>--}}
 {{--        </div>--}}
-        <h4 class="main_log-title">ここに登録者の名前表示</h4>
-        <div class="news">
-            <table>
+        <h4 class="main_log-title">zundakosanさんのプロフィール</h4>
+        <div class="section_mypage">
+            <p class="prof_img"><img src="{{ asset('img/me.jpg') }}"></p>
+            <table class="prof_table">
                 <tr>
-                    <th>アイコン表示</th>
-                    <td>(最初はme.jpgを自動挿入)</td>
+                    <th>名前</th>
+                    <td>{{ $prof_info->name }}</td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td>{{ $prof_info->email }}</td>
+                </tr>
+                <tr>
+                    <th>居住地</th>
+                    <td>{{ $prof_info->zip }}</td>
+                </tr>
+                <tr>
+                    <th>携帯番号</th>
+                    <td>{{ $prof_info->tel }}</td>
                 </tr>
             </table>
         </div>

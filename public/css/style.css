@@ -1614,3 +1614,45 @@ ul {
     margin-bottom: 30px;
     font-size: 14px;
 }
+
+.prof_table{
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px auto;
+    border:none;
+}
+
+.prof_table tr,.prof_table td,.prof_table th{
+    padding:5px;
+    min-height: 30px;
+    box-sizing: border-box;
+    background: #efefef;
+}
+
+.prof_table th,.td2 th{
+    background: #96e6a1;
+    width: 20%;
+    border-left:10px solid #64996b;
+    text-align: center;
+}
+
+.prof_table td{
+    width: 80%;
+    min-height: 30px;
+    text-align: left;
+    padding-left: 15px
+}
+
+.prof_img{
+    width: 100%;
+    margin:15px auto;
+    display: block;
+}
+
+.prof_img img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin:0 auto;
+}

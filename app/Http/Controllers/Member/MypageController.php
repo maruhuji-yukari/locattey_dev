@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Member;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -10,7 +11,9 @@ class MypageController extends Controller
 {
     //マイページ表示
     public function index(){
-        return view('member.mypage');
+        $id = Auth::id();
+        $prof_info = User::find($id);
+        return view('member.mypage',compact('prof_info'));
     }
 
     //登録情報更新(view)
