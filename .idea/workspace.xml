@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b30b4d2-989b-4e15-8be4-75288af1114b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_12_190400_add_columns_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/me.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MypageUpdateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/MypageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/MypageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/member/mypage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/trade_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/trade_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,6 +197,7 @@
       <workItem from="1594436785918" duration="4663000" />
       <workItem from="1594445180581" duration="12027000" />
       <workItem from="1594545393213" duration="4240000" />
+      <workItem from="1594579356134" duration="4864000" />
     </task>
     <servers />
   </component>
@@ -218,10 +221,10 @@
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="481" y="326" key="NewPhpFileDialog/0.23.1321.745@0.23.1321.745" timestamp="1594506006515" />
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594545396812">
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594579356631">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594545396812" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594579356631" />
     <state x="372" y="217" width="667" height="486" key="find.popup" timestamp="1593927413882">
       <screen x="0" y="23" width="1321" height="745" />
     </state>

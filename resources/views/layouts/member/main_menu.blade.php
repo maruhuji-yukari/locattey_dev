@@ -4,7 +4,7 @@
             <ul class="menuArea_list">
                 @if(Auth::check())
                     <li><a href="{{ route('mypage') }}">マイページトップ</a></li>
-                    <li><a href="{{ route('memberEdit') }}">登録情報確認・変更</a></li>
+                    <li><a href="{{ route('memberEdit') }}">登録情報変更</a></li>
                     <li><a href="{{ route('tradeList') }}">出品履歴一覧</a></li>
                     <li><a href="bid_list.html">引取履歴一覧</a></li>
                     <li><a href="withdrawal.html">退会</a></li>

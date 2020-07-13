@@ -32,8 +32,6 @@ Route::post('login','AUth\LoginController@login')->name('login');
 Route::group(['middleware' => 'auth'],function(){
     Route::post('logout','Auth\LoginController@logout')->name('logout');
 
-    Route::get('member/mypage','Member\MypageController@index')->name('mypage');
-
     Route::get('member/trade/register','Member\ProductsController@new')->name('tradeRegister');
     Route::post('member/trade/register','Member\ProductsController@create')->name('tradeCreate');
 
@@ -45,6 +43,7 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('member_trade/{id}/editImages','Member\ProductsController@editImage')->name('editImage');
     Route::post('member_trade/{id}/editUploads','Member\ProductsController@editUploads')->name('editUploads');
 
+    Route::get('member/mypage','Member\MypageController@index')->name('mypage');
     Route::get('member/register/edit','Member\MypageController@edit')->name('memberEdit');
     Route::post('member/register/update','Member\MypageController@update')->name('memberUpdate');
 
