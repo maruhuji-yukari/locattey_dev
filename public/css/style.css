@@ -357,8 +357,6 @@ ul {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
-=======
   align-items: start;
 >>>>>>> develop
   flex-direction: column;
@@ -506,11 +504,7 @@ ul {
     text-align: center;
     color: #efefef; }
 
-<<<<<<< HEAD
-.pagination_space {
-=======
 .pagination_area {
->>>>>>> develop
   width: 100%;
   padding: 10px;
   box-sizing: border-box; }
@@ -698,11 +692,13 @@ ul {
     font-size: 18px;
     text-align: center;
     display: block;
+    margin: 15px auto;
     border: none;
     border-radius: 5px;
     transition: 0.25s;
     box-shadow: 2px 2px #777777;
-    margin-right: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
   }
 
   .register_submit:hover {
@@ -1621,4 +1617,68 @@ ul {
     float: right;
     margin-bottom: 30px;
     font-size: 14px;
+}
+
+.prof_table{
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px auto;
+    border:none;
+}
+
+.prof_table tr,.prof_table td,.prof_table th{
+    padding:5px;
+    min-height: 30px;
+    box-sizing: border-box;
+    background: #efefef;
+}
+
+.prof_table th,.td2 th{
+    background: #96e6a1;
+    width: 20%;
+    border-left:10px solid #64996b;
+    text-align: center;
+}
+
+.prof_table td{
+    width: 80%;
+    min-height: 30px;
+    text-align: left;
+    padding-left: 15px
+}
+
+.prof_img{
+    width: 100%;
+    margin:15px auto;
+    display: block;
+}
+
+.prof_img img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin:0 auto;
+}
+
+.edit_submit {
+    width: 100px;
+    height: 50px;
+    background: #3f8d69;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    transition: 0.25s;
+    box-shadow: 2px 2px #777777;
+    margin-right: 15px;
+}
+
+.edit_submit:hover {
+    background: #f9ffb9;
+    border-bottom: 2px solid #777777;
+    box-shadow: none;
+    transition: 0.25s;
+    cursor: grab;
 }

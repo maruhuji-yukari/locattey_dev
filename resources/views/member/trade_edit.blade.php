@@ -61,7 +61,7 @@
         <input type="text" name="updated_at" hidden value="{{ $updated_at }}">
 
         <div class="btn_space_edit">
-            <input type="submit" class="register_submit" value="{{ __('Edit.') }}">
+            <input type="submit" class="edit_submit" value="{{ __('Edit.') }}">
             <a href="{{ route('tradeRemove',$products->id) }}"><span class="submit_delete">{{ __('Deleted.') }}</span></a>
         </div>
         <p class="link_back"><a href="{{ route('tradeList') }}">一覧へ戻る</a></p>

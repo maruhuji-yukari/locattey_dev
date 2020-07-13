@@ -29,11 +29,7 @@
         </a>
          @endforeach
     </div>
-<<<<<<< HEAD
-    <div class="pagination_space">
-=======
     <div class="pagination_area">
->>>>>>> develop
         {{ $products->links() }}
     </div>
 
