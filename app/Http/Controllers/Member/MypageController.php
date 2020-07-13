@@ -30,7 +30,25 @@ class MypageController extends Controller
         $id = Auth::id();
         $prof_info = User::find($id);
 
+        $prof_info->fill($request->all())->save();
 
         return redirect('member/mypage')->with('flash_message', __('Edited.'));
+    }
+
+    //登録削除(確認ページview)
+    public function preview(){
+        //DBのデータを取得
+        $id = Auth::id();
+        $prof_info = User::find($id);
+
+        return view('member.delete_preview',compact('prof_info'));
+    }
+
+    public function delete(){
+        //DBのデータを取得
+        $id = Auth::id();
+        User::find($id)->delete();
+
+        return redirect('/')->with('flash_message',__('Member Deleted.'));
     }
 }

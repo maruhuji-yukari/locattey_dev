@@ -20,5 +20,6 @@
     "Deleted." : "削除",
     "CompleteDelete": "削除しました!",
     "bid." : "入札する!",
-    "Please Login." : "入札するにはログインしてください"
+    "Please Login." : "入札するにはログインしてください",
+    "Member Deleted." : "会員情報を削除しました"
 }

@@ -49,6 +49,9 @@ Route::group(['middleware' => 'auth'],function(){
 
     Route::get('member/{id}/remove','Member\ProductsController@remove')->name('tradeRemove');
     Route::post('member/{id}/delete','Member\ProductsController@delete')->name('tradeDelete');
+
+    Route::get('member/delete_preview','Member\MypageController@preview')->name('deletePreview');
+    Route::post('member/delete',"Member\MypageController@delete")->name('deleteMember');
 });
 
 

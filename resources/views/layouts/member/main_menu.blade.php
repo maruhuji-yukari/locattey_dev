@@ -7,7 +7,7 @@
                     <li><a href="{{ route('memberEdit') }}">登録情報変更</a></li>
                     <li><a href="{{ route('tradeList') }}">出品履歴一覧</a></li>
                     <li><a href="bid_list.html">引取履歴一覧</a></li>
-                    <li><a href="withdrawal.html">退会</a></li>
+                    <li><a href="{{ route('deletePreview') }}">退会</a></li>
                 @else
                     <li><a href="{{ route('login') }}">閲覧するにはログインしてください</a></li>
                  @endif
