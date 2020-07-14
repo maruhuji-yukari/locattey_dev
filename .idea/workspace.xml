@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b30b4d2-989b-4e15-8be4-75288af1114b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/app/Http/Requests/MypageUpdateRequest.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/resources/views/passwordReissue.blade.php" afterDir="false" />
+>>>>>>> develop
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/MypageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/MypageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/member/trade_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/trade_edit.blade.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/resources/lang/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ja/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ja/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/delete_preview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/delete_preview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/mypage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" />
+>>>>>>> develop
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
 >>>>>>> develop
     </list>
@@ -143,16 +157,27 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/images" />
+>>>>>>> develop
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
+      <recent name="$PROJECT_DIR$/storage/images" />
+>>>>>>> develop
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/storage/app/images/images" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Member" />
       <recent name="$PROJECT_DIR$/storage/app/images" />
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/public" />
+=======
+>>>>>>> develop
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/member" />
@@ -202,6 +227,11 @@
       <workItem from="1594445180581" duration="12027000" />
       <workItem from="1594545393213" duration="4240000" />
       <workItem from="1594579356134" duration="4864000" />
+<<<<<<< HEAD
+=======
+      <workItem from="1594638596888" duration="3073000" />
+      <workItem from="1594675360773" duration="5257000" />
+>>>>>>> develop
     </task>
     <servers />
   </component>
@@ -221,6 +251,7 @@
     </state>
     <state x="298" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1321.745@0.23.1321.745" timestamp="1593923824518" />
     <state x="298" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1322.745@0.23.1322.745" timestamp="1593926341587" />
+<<<<<<< HEAD
     <state x="481" y="326" key="NewPhpFileDialog" timestamp="1594506006515">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
@@ -229,13 +260,30 @@
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594579356631" />
+=======
+    <state x="479" y="470" key="NewPhpFileDialog" timestamp="1594679471552">
+      <screen x="0" y="23" width="1321" height="745" />
+    </state>
+    <state x="479" y="470" key="NewPhpFileDialog/0.23.1321.745@0.23.1321.745" timestamp="1594679471552" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594675374641">
+      <screen x="0" y="23" width="1321" height="745" />
+    </state>
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594675374641" />
+>>>>>>> develop
     <state x="372" y="217" width="667" height="486" key="find.popup" timestamp="1593927413882">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="372" y="217" width="667" height="486" key="find.popup/0.23.1321.745@0.23.1321.745" timestamp="1593927413882" />
+<<<<<<< HEAD
     <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594549088376">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594549088376" />
+=======
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594680178400">
+      <screen x="0" y="23" width="1321" height="745" />
+    </state>
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594680178400" />
+>>>>>>> develop
   </component>
 </project>

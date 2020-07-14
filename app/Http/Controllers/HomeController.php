@@ -38,6 +38,7 @@ class HomeController extends Controller
         $products2 = Product::where('trade_flag','=',1)->paginate(10);
 
         return view('index',compact('products','products2'));
+<<<<<<< HEAD
 
     }
 =======
@@ -49,6 +50,8 @@ class HomeController extends Controller
         $products2 = Product::where('trade_flag','=',1)->paginate(10);
 
         return view('index',compact('products','products2'));
+=======
+>>>>>>> develop
 
     }
 

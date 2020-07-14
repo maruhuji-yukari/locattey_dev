@@ -15,7 +15,7 @@
             <form action="{{ route('register') }}" class="form" method="POST">
                 @csrf
                 <label for="" class="register_label">名前:</label>
-                <input type="text" class="register_input" name="name" placeholder="名前">
+                <input type="text" class="register_input" name="name" placeholder="名前" required value="{{ old('name') }}">
                 @error('name')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
@@ -23,7 +23,8 @@
                 @enderror
 
                 <label for="" class="register_label">メールアドレス:</label>
-                <input type="email" class="register_input" name="email" required placeholder="メールアドレス形式で入力してください">
+                <input type="email" class="register_input" name="email"
+                       required placeholder="メールアドレス形式で入力してください" value="{{ old('email') }}">
                 @error('email')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
@@ -31,16 +32,16 @@
                 @enderror
 
                 <label for="" class="register_label">パスワード(6文字以上):</label>
-                <input type="password" class="register_input" name="password" required>
+                <input type="text" class="register_input" name="password" required value="{{ old('password') }}">
                 @error('password')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                     </span>
                 @enderror
 
-                <label for="" class="register_label">パスワード(上記と同じもの):</label>
-                <input type="password" class="register_input" name="password_confirmation" required>
-                <button type="submit" class="register_submit">新規登録</button>
+                <label for="" class="register_label">確認用パスワード(上記と同じもの):</label>
+                <input type="text" class="register_input" name="password_confirmation" required value="{{ old('password_confirmation') }}">
+                <button type="submit" class="register_submit">{{ __('Register') }}</button>
             </form>
         </div>
     </div>
