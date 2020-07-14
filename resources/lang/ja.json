@@ -15,6 +15,7 @@
     "categories_id": "カテゴリー",
     "Profile Edit" : "登録情報更新",
     "Uploaded." : "登録済みの画像",
+    "Uploaded!" : "プロフィール画像を更新しました!",
     "ProductDelete." : "出品情報削除します",
     "CompleteDeleted." : "完全に消去されます。ご注意ください。",
     "Deleted." : "削除",
@@ -23,5 +24,13 @@
     "Please Login." : "入札するにはログインしてください",
     "Member Deleted." : "会員情報を削除しました",
     "password" : "パスワード",
-    "PasswordReissue" : "パスワードを再発行する"
+    "PasswordReissue" : "パスワードを再発行する",
+    "Please confirm your password before continuing.": "実行する前にパスワードの確認が必要です。",
+    "Forgot Your Password?" : "パスワードを忘れましたか?",
+    "Password" : "パスワード",
+    "Confirm Password" : "パスワード確認",
+    "Reset Password" : "パスワードリセット",
+    "E-Mail Address" : "登録済のメールアドレス",
+    "Send Password Reset Link" : "パスワードリセットのメールを送信",
+    "New Password" : "新しいパスワード"
 }

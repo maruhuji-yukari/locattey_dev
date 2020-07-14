@@ -45,6 +45,8 @@ Route::group(['middleware' => 'auth'],function(){
     Route::post('member_trade/{id}/editUploads','Member\ProductsController@editUploads')->name('editUploads');
 
     Route::get('member/mypage','Member\MypageController@index')->name('mypage');
+    Route::post('member/mypage','Member\MypageController@upload')->name('profUpload');
+
     Route::get('member/register/edit','Member\MypageController@edit')->name('memberEdit');
     Route::post('member/register/update','Member\MypageController@update')->name('memberUpdate');
 
@@ -55,5 +57,13 @@ Route::group(['middleware' => 'auth'],function(){
     Route::post('member/delete',"Member\MypageController@delete")->name('deleteMember');
 });
 
+Route::get('auth/confirm','Auth\ConfirmPasswordController@showConfirmForm')->name('showConfirmForm');
+Route::post('auth/confirm','Auth\ConfirmPasswordController@confirm')->name('password.confirm');
+
+Route::get('auth/email','Auth\ForgotPasswordController@showLinkRequestForm')->name('showLinkRequestForm');
+Route::post('auth/email','Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+
+Route::get('auth/reset','Auth\ResetPasswordController@showResetForm')->name('showResetForm');
+Route::post('auth/reset','Auth\ResetPasswordController@reset')->name('password.update');
 
 Route::get('trade/{id}','HomeController@simple')->name('tradeSimple');

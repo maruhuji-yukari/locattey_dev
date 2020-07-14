@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MypageUpdateRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Requests\MypageUploadRequest;
 
 class MypageController extends Controller
 {
@@ -14,6 +14,21 @@ class MypageController extends Controller
     public function index(){
         $prof_info = Auth::user();
         return view('member.mypage',compact('prof_info'));
+    }
+
+    //プロフィール画像うp
+    public function upload(MypageUploadRequest $request){
+        $prof_img =User::find(Auth::id());
+
+        //upload
+        $tmpFile = $request->file('prof_img')->store('public/images');
+        $filename = pathinfo($tmpFile, PATHINFO_FILENAME);
+        $extension = Pathinfo($tmpFile, PATHINFO_EXTENSION);
+        $uploads_name = $filename . '.' . $extension;
+        $prof_img->prof_img = $uploads_name;
+        $prof_img->save();
+
+        return redirect('member/mypage')->with('flash_message',__('Uploaded!'));
     }
 
     //登録情報更新(view)

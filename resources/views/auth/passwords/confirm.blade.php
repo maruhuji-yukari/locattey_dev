@@ -1,49 +1,38 @@
-@extends('layouts.app')
+@extends('layouts.member.common_single')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Confirm Password') }}</div>
+@section('page_title','パスワード確認')
 
-                <div class="card-body">
-                    {{ __('Please confirm your password before continuing.') }}
+@include('layouts.member.header')
 
-                    <form method="POST" action="{{ route('password.confirm') }}">
-                        @csrf
+@include('layouts.member.menu')
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+@include('layouts.member.navi')
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+@section('section_title','パスワード確認')
+@section('main_content')
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Confirm Password') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div class="section_reset">
+        <form class="form_reset" method="POST" action="{{ route('password.confirm') }}">
+            <p>{{ __('Please confirm your password before continuing.') }}</p>
+            @csrf
+            <input type="password" name="password" value="パスワードを入力してください" class="register_input @error('password') is-invalid @enderror">
+             @error('password')
+            <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+            </span>
+             @enderror
+            <input type="submit" class="submit_reset" value="確認">
+            <p>
+            @if (Route::has('showResetForm'))
+                <a class="btn btn-link" href="{{ route('showLinkRequestForm') }}">
+                    {{ __('Forgot Your Password?') }}
+                </a>
+            @endif
+            </p>
+        </form>
     </div>
-</div>
+
 @endsection
+
+@include('layouts.member.footer')
+

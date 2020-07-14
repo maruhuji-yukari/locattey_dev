@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class MypageUpdateRequest extends FormRequest
+class MypageUploadRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,12 +24,9 @@ class MypageUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'=> 'required | string | max:255',
-            'email' => 'required | string | max:500',
-            'zip' => 'required | string | max:15',
-            'tel' => 'required | string | max:15',
+            //プロフアイコンをアップロード。3MB以下
+            //jpeg,jpg,gif,pngのみ
+            'prof_img' => 'required | file | mimes:jpeg,jpg,png,gif | max:30700',
         ];
     }
-
-
 }

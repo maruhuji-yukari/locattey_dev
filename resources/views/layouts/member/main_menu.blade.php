@@ -20,6 +20,9 @@
                 <li><a href="aboutsite.html">当サイトについて</a></li>
                 <li><a href="faq.html">よくある質問</a></li>
                 <li><a href="mailform.html">お問合せ</a></li>
+                <li><a href="{{ route('password.email') }}">メール送信</a></li>
+                <li><a href="{{ route('password.update') }}">パスワードリセット</a></li>
+                <li><a href="{{ route('password.confirm') }}">確認?</a></li>
             </ul>
         </div>
 @endsection
