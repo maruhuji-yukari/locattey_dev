@@ -28,6 +28,7 @@ Route::post('/register','Auth\RegisterController@register')->name('register');
 Route::get('login','Auth\LoginController@showLoginForm')->name('showLogin');
 Route::post('login','AUth\LoginController@login')->name('login');
 
+
 //認証必要なページにミドルウェア
 Route::group(['middleware' => 'auth'],function(){
     Route::post('logout','Auth\LoginController@logout')->name('logout');

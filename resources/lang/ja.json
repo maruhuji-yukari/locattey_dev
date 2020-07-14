@@ -8,7 +8,7 @@
     "Edited." : "修正しました",
     "Edit." : "修正",
     "New_TalkLog" : "最新トーク履歴",
-    "Register." : "登録",
+    "Register" : "登録",
     "Registered." : "登録しました",
     "Remember Me" : "パスワードを記憶する",
     "Invalid operation was performed." : "無効なURLです。",
@@ -21,5 +21,7 @@
     "CompleteDelete": "削除しました!",
     "bid." : "入札する!",
     "Please Login." : "入札するにはログインしてください",
-    "Member Deleted." : "会員情報を削除しました"
+    "Member Deleted." : "会員情報を削除しました",
+    "password" : "パスワード",
+    "PasswordReissue" : "パスワードを再発行する"
 }

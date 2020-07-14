@@ -36,7 +36,7 @@
 {{--            </div>--}}
 {{--            <p class="msg_link3"><a href="talk_list.html">トーク履歴一覧</a></p>--}}
 {{--        </div>--}}
-        <h4 class="main_log-title">zundakosanさんのプロフィール</h4>
+        <h4 class="main_log-title">{{ $prof_info->name }}さんのプロフィール</h4>
         <div class="section_mypage">
             <p class="prof_img"><img src="{{ asset('img/me.jpg') }}"></p>
             <table class="prof_table">

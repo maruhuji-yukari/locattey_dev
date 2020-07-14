@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Member;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MypageUpdateRequest;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class MypageController extends Controller
 {
@@ -45,9 +45,8 @@ class MypageController extends Controller
     }
 
     public function delete(){
-        //DBのデータを取得
-        $id = Auth::id();
-        User::find($id)->delete();
+        //softdelete
+        User::find(Auth::id())->delete();
 
         return redirect('/')->with('flash_message',__('Member Deleted.'));
     }

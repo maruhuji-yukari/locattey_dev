@@ -39,7 +39,11 @@
                     </span>
                 @enderror
 
-                <button type="submit" class="register_submit">ログイン</button>
+                <button type="submit" class="register_submit">{{ __('Login') }}</button>
+                <ul class="link_back3">
+                    <li>パスワードを忘れた方は再発行してください。</li>
+                    <li>再発行ページはこちら</li>
+                </ul>
             </form>
         </div>
     </div>
