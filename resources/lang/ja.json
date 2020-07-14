@@ -15,6 +15,7 @@
     "categories_id": "カテゴリー",
     "Profile Edit" : "登録情報更新",
     "Uploaded." : "登録済みの画像",
+    "Uploaded!" : "プロフィール画像を更新しました!",
     "ProductDelete." : "出品情報削除します",
     "CompleteDeleted." : "完全に消去されます。ご注意ください。",
     "Deleted." : "削除",
@@ -27,5 +28,4 @@
     "Member Deleted." : "会員情報を削除しました",
     "password" : "パスワード",
     "PasswordReissue" : "パスワードを再発行する"
->>>>>>> develop
 }

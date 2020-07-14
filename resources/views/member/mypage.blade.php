@@ -42,7 +42,26 @@
         <h4 class="main_log-title">{{ $prof_info->name }}さんのプロフィール</h4>
 >>>>>>> develop
         <div class="section_mypage">
-            <p class="prof_img"><img src="{{ asset('img/me.jpg') }}"></p>
+            <p class="prof_img">
+                @if($prof_info->prof_img != 'me.jpg')
+                    <img src="{{ asset('images/images/'.$prof_info->prof_img) }}" alt="me!">
+                 @else
+                    <img src="{{ asset('img/me.jpg') }}" alt="me!">
+                @endif
+            </p>
+            <div class="file_upload">
+                <form action="{{ route('profUpload') }}" method="POST" enctype="multipart/form-data" class="form_upload">
+                    @csrf
+                    <input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+                    <input type="file" class="input_file" name="prof_img">
+                    <input type="submit" class="submit_file" value="画像を変更">
+                </form>
+                <ul class="errorMsg">
+                    @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
             <table class="prof_table">
                 <tr>
                     <th>名前</th>

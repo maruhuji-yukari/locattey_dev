@@ -42,7 +42,7 @@
                 <button type="submit" class="register_submit">{{ __('Login') }}</button>
                 <ul class="link_back3">
                     <li>パスワードを忘れた方は再発行してください。</li>
-                    <li>再発行ページはこちら</li>
+                    <li>再発行ページは<a href="{{ route('showLinkRequestForm') }}">こちら</a></li>
                 </ul>
             </form>
         </div>

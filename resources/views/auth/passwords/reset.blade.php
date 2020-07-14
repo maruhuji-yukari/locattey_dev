@@ -1,65 +1,49 @@
-@extends('layouts.app')
+@extends('layouts.member.common_single')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+@section('page_title','パスワードをリセット')
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
-                        @csrf
+@include('layouts.member.header')
 
-                        <input type="hidden" name="token" value="{{ $token }}">
+@include('layouts.member.menu')
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+@include('layouts.member.navi')
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
+@section('section_title','パスワードをリセット')
+@section('main_content')
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+    <div class="section_reset">
+        <form class="form_reset" method="POST" action="{{ route('password.update') }}">
+            <p>登録しているメールアドレスと新しいパスワードを登録してください。</p>
+            @csrf
+            <lable class="register_label">{{ __('E-Mail Address') }}</lable>
+            <input type="email" required autofocus class="register_input @error('email') is-invalid @enderror" value="{{ $email ?? old('email') }}" autocomplete="登録しているメールアドレス">
+            @error('email')
+            <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+            </span>
+            @enderror
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+            <lable class="register_label">{{ __('New Password') }}</lable>
+            <input id="password" type="password" class="register_input @error('password') is-invalid @enderror" name="password" required autocomplete="新しいパスワード">
+            @error('password')
+            <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+            </span>
+            @enderror
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+            <lable class="register_label">{{ __('Confirm Password') }}</lable>
+            <input id="password" type="password" class="register_input @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="上と同じパスワード">
+            @error('password_confirmation')
+            <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+            </span>
+            @enderror
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset Password') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+            <input type="submit" class="submit_reset2" value="{{ __('Reset Password') }}">
+        </form>
     </div>
-</div>
+
 @endsection
+
+@include('layouts.member.footer')
+
