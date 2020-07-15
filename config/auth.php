@@ -69,6 +69,8 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+            'table' => 'password_resets',
+            'expire' => 30,
         ],
 
         // 'users' => [

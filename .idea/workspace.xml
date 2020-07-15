@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d01584-2c6d-43b2-90e6-8a6ee41f1a6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MypageUploadRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/old/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/old/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/old/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/member/common_single.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/PasswordResetNotification.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Member/MypageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Member/MypageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/MypageUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/MypageUpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/member/mypage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +168,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b30b4d2-989b-4e15-8be4-75288af1114b" name="Default Changelist" comment="" />
+      <changelist id="19d01584-2c6d-43b2-90e6-8a6ee41f1a6f" name="Default Changelist" comment="" />
       <created>1593919852157</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -209,6 +197,9 @@
       <workItem from="1594579356134" duration="4864000" />
       <workItem from="1594638596888" duration="3073000" />
       <workItem from="1594675360773" duration="5257000" />
+      <workItem from="1594722041783" duration="50000" />
+      <workItem from="1594783494420" duration="2084000" />
+      <workItem from="1594810807147" duration="4570000" />
     </task>
     <servers />
   </component>
@@ -232,17 +223,17 @@
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="479" y="470" key="NewPhpFileDialog/0.23.1321.745@0.23.1321.745" timestamp="1594679471552" />
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594704464984">
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594810807002">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594704464984" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594810807002" />
     <state x="372" y="217" width="667" height="486" key="find.popup" timestamp="1593927413882">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="372" y="217" width="667" height="486" key="find.popup/0.23.1321.745@0.23.1321.745" timestamp="1593927413882" />
-    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594720706199">
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594814477697">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594720706199" />
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594814477697" />
   </component>
 </project>

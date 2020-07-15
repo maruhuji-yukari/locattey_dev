@@ -32,5 +32,10 @@
     "Reset Password" : "パスワードリセット",
     "E-Mail Address" : "登録済のメールアドレス",
     "Send Password Reset Link" : "パスワードリセットのメールを送信",
-    "New Password" : "新しいパスワード"
+    "New Password" : "新しいパスワード",
+    "Verify Your Email Address" : "パスワード再設定用のURLを送信しました",
+    "A fresh verification link has been sent to your email address." : "パスワード再設定用のURLを入力したのメールアドレスに送信しました",
+    "Before proceeding, please check your email for a verification link." : "メールでパスワード再設定用のURLを確認してください。",
+    "If you did not receive the email" : "メールが届かない場合",
+    "click here to request another" : "ここをクリックして別のメールアドレスを指定してください"
 }
