@@ -32,11 +32,7 @@
                 <label for="password" class="mypage_label">
                     <p class="input_item">パスワード変更はこちら</p>
                 </label>
-<<<<<<< HEAD
-                <input type="text" hidden value="" name="updated_at">
-=======
                 <input type="text" hidden value="{{ $updated_at }}" name="updated_at">
->>>>>>> develop
                 <input type="submit" value="修正" class="mypage_submit">
             </form>
         </div>

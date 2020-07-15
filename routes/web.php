@@ -28,15 +28,6 @@ Route::post('/register','Auth\RegisterController@register')->name('register');
 Route::get('login','Auth\LoginController@showLoginForm')->name('showLogin');
 Route::post('login','AUth\LoginController@login')->name('login');
 
-<<<<<<< HEAD
-//認証必要なページにミドルウェア
-Route::group(['middleware' => 'auth'],function(){
-    Route::post('logout','Auth\LoginController@logout')->name('logout');
-
-    Route::get('member/trade/register','Member\ProductsController@new')->name('tradeRegister');
-    Route::post('member/trade/register','Member\ProductsController@create')->name('tradeCreate');
-
-=======
 
 //認証必要なページにミドルウェア
 Route::group(['middleware' => 'auth'],function(){
@@ -45,7 +36,6 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('member/trade/register','Member\ProductsController@new')->name('tradeRegister');
     Route::post('member/trade/register','Member\ProductsController@create')->name('tradeCreate');
 
->>>>>>> develop
     Route::get('member/trade/list','Member\ProductsController@list')->name('tradeList');
 
     Route::get('member/trade/{id}/edit','Member\ProductsController@edit')->name('tradeEdit');
@@ -62,12 +52,11 @@ Route::group(['middleware' => 'auth'],function(){
 
     Route::get('member/{id}/remove','Member\ProductsController@remove')->name('tradeRemove');
     Route::post('member/{id}/delete','Member\ProductsController@delete')->name('tradeDelete');
-<<<<<<< HEAD
-=======
+
 
     Route::get('member/delete_preview','Member\MypageController@preview')->name('deletePreview');
     Route::post('member/delete',"Member\MypageController@delete")->name('deleteMember');
->>>>>>> develop
+
 });
 
 Route::get('auth/confirm','Auth\ConfirmPasswordController@showConfirmForm')->name('showConfirmForm');

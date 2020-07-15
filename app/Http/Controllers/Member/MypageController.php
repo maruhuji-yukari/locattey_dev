@@ -5,10 +5,6 @@ namespace App\Http\Controllers\Member;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MypageUpdateRequest;
 use App\Models\User;
-<<<<<<< HEAD
-use Illuminate\Http\Request;
-=======
->>>>>>> develop
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\MypageUploadRequest;
 
@@ -48,11 +44,6 @@ class MypageController extends Controller
         //DBのデータを取得
         $id = Auth::id();
         $prof_info = User::find($id);
-
-<<<<<<< HEAD
-
-        return redirect('member/mypage')->with('flash_message', __('Edited.'));
-=======
         $prof_info->fill($request->all())->save();
 
         return redirect('member/mypage')->with('flash_message', __('Edited.'));
@@ -72,6 +63,5 @@ class MypageController extends Controller
         User::find(Auth::id())->delete();
 
         return redirect('/')->with('flash_message',__('Member Deleted.'));
->>>>>>> develop
     }
 }

@@ -38,20 +38,6 @@ class HomeController extends Controller
         $products2 = Product::where('trade_flag','=',1)->paginate(10);
 
         return view('index',compact('products','products2'));
-<<<<<<< HEAD
-
-    }
-=======
-        //通常(入札前/完了の情報を表示)
-        //出品情報をDBから取得(入札中の情報は出さない、入札中の場合はtrade_flag=1、引き取り完了の場合はtrade_flag=2、入札前の場合はtrade_flag=0)
-        $products = Product::where('trade_flag','!=',1)->orderBy('id','DESC')->paginate(10);
-
-        //検索時のパターン(引き取り完了の情報を出さない trade_flag=1のみ)
-        $products2 = Product::where('trade_flag','=',1)->paginate(10);
-
-        return view('index',compact('products','products2'));
-=======
->>>>>>> develop
 
     }
 

@@ -36,11 +36,7 @@
 {{--            </div>--}}
 {{--            <p class="msg_link3"><a href="talk_list.html">トーク履歴一覧</a></p>--}}
 {{--        </div>--}}
-<<<<<<< HEAD
-        <h4 class="main_log-title">zundakosanさんのプロフィール</h4>
-=======
         <h4 class="main_log-title">{{ $prof_info->name }}さんのプロフィール</h4>
->>>>>>> develop
         <div class="section_mypage">
             <p class="prof_img">
                 @if($prof_info->prof_img != 'me.jpg')
