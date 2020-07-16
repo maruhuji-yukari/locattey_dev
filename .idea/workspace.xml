@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d01584-2c6d-43b2-90e6-8a6ee41f1a6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Notifications/PasswordResetNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/passwordreset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
@@ -26,6 +29,16 @@
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
 >>>>>>> develop
 >>>>>>> master
+=======
+      <change beforePath="$PROJECT_DIR$/app/Notifications/PasswordResetNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/PasswordResetNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+>>>>>>> develop
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,18 +174,18 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/member" />
-      <recent name="$PROJECT_DIR$/resources/views/motoneta" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/app/Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/layouts/member" />
       <recent name="$PROJECT_DIR$/resources/views/auth/passwords/old" />
       <recent name="$PROJECT_DIR$/storage/images" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/storage/app/images/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/member" />
+      <recent name="$PROJECT_DIR$/resources/views/motoneta" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/app/Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -224,9 +237,15 @@
       <workItem from="1594722041783" duration="50000" />
       <workItem from="1594783494420" duration="2084000" />
       <workItem from="1594810807147" duration="4570000" />
+<<<<<<< HEAD
 =======
 >>>>>>> develop
 >>>>>>> master
+=======
+      <workItem from="1594901341277" duration="168000" />
+      <workItem from="1594901512278" duration="3671000" />
+      <workItem from="1594905545944" duration="3352000" />
+>>>>>>> develop
     </task>
     <servers />
   </component>
@@ -247,6 +266,7 @@
     <state x="298" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1321.745@0.23.1321.745" timestamp="1593923824518" />
     <state x="298" y="157" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1322.745@0.23.1322.745" timestamp="1593926341587" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <state x="481" y="326" key="NewPhpFileDialog" timestamp="1594506006515">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
@@ -258,19 +278,24 @@
 =======
     <state x="479" y="470" key="NewPhpFileDialog" timestamp="1594679471552">
       <screen x="0" y="23" width="1321" height="745" />
+=======
+    <state x="226" y="240" key="NewPhpFileDialog" timestamp="1594907404126">
+      <screen x="0" y="23" width="1322" height="745" />
+>>>>>>> develop
     </state>
-    <state x="479" y="470" key="NewPhpFileDialog/0.23.1321.745@0.23.1321.745" timestamp="1594679471552" />
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594810807002">
+    <state x="226" y="240" key="NewPhpFileDialog/0.23.1321.745@0.23.1321.745" timestamp="1594901531036" />
+    <state x="226" y="240" key="NewPhpFileDialog/0.23.1322.745@0.23.1322.745" timestamp="1594907404126" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594905563122">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594810807002" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594905563122" />
     <state x="372" y="217" width="667" height="486" key="find.popup" timestamp="1593927413882">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="372" y="217" width="667" height="486" key="find.popup/0.23.1321.745@0.23.1321.745" timestamp="1593927413882" />
-    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594814477697">
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594908122993">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594814477697" />
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594908122993" />
   </component>
 </project>

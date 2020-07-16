@@ -38,5 +38,6 @@
     "A fresh verification link has been sent to your email address." : "パスワード再設定用のURLを入力したのメールアドレスに送信しました",
     "Before proceeding, please check your email for a verification link." : "メールでパスワード再設定用のURLを確認してください。",
     "If you did not receive the email" : "メールが届かない場合",
-    "click here to request another" : "ここをクリックして別のメールアドレスを指定してください"
+    "click here to request another" : "ここをクリックして別のメールアドレスを指定してください",
+    "Accepted your inquiry" : "お問い合わせを受け付けました。"
 }
