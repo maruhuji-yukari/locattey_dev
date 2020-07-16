@@ -60,10 +60,12 @@ Route::group(['middleware' => 'auth'],function(){
 Route::get('auth/confirm','Auth\ConfirmPasswordController@showConfirmForm')->name('showConfirmForm');
 Route::post('auth/confirm','Auth\ConfirmPasswordController@confirm')->name('password.confirm');
 
-Route::get('auth/email','Auth\ForgotPasswordController@showLinkRequestForm')->name('showLinkRequestForm');
-Route::post('auth/email','Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('/password/sendEmail','Auth\ForgotPasswordController@showLinkRequestForm')->name('password.email.send');
+Route::post('/password/email','Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 
-Route::get('auth/reset','Auth\ResetPasswordController@showResetForm')->name('showResetForm');
-Route::post('auth/reset','Auth\ResetPasswordController@reset')->name('password.update');
+Route::get('/password/reset/{token}','Auth\ResetPasswordController@showResetForm')->name('showResetForm');
+Route::post('/password/reset','Auth\ResetPasswordController@reset')->name('password.update');
 
 Route::get('trade/{id}','HomeController@simple')->name('tradeSimple');
+
+Route::get('/contact','ContactController@show')->name('contact');

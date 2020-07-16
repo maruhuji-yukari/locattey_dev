@@ -15,8 +15,9 @@
         <form class="form_reset" method="POST" action="{{ route('password.update') }}">
             <p>登録しているメールアドレスと新しいパスワードを登録してください。</p>
             @csrf
+            <input type="hidden" name="token" value="{{ $token }}">
             <lable class="register_label">{{ __('E-Mail Address') }}</lable>
-            <input type="email" required autofocus class="register_input @error('email') is-invalid @enderror" value="{{ $email ?? old('email') }}" autocomplete="登録しているメールアドレス">
+            <input type="email" name="email" required autofocus class="register_input @error('email') is-invalid @enderror" value="{{ $email ?? old('email') }}" autocomplete="登録しているメールアドレス">
             @error('email')
             <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>

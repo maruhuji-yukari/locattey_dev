@@ -821,25 +821,6 @@ ul {
   left: 0;
   top: -5px; }
 
-/*input[type=checkbox] {*/
-/*  display: none; }*/
-
-/*input[type=checkbox] + label:before {*/
-/*  font-family: FontAwesome;*/
-/*  display: inline-block; }*/
-
-/*input[type=checkbox] + label:before {*/
-/*  content: "\f111"; }*/
-
-/*input[type=checkbox] + label:before {*/
-/*  letter-spacing: 10px; }*/
-
-/*input[type=checkbox]:checked + label:before {*/
-/*  content: "\f058"; }*/
-
-/*input[type=checkbox]:checked + label:before {*/
-/*  letter-spacing: 10px; }*/
-
 .errorMsg {
   color: #ff0000;
   font-size: 16px;
@@ -1775,4 +1756,15 @@ ul {
     display: block;
     width: 70%;
     margin:0 auto;
+}
+
+.input_item,.input_item2{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.input_item2{
+    font-size: 14px;
+    text-align: right;
 }
