@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d01584-2c6d-43b2-90e6-8a6ee41f1a6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/passwordreset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ContactRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_18_213042_create_contact_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact_confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact_tanks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
@@ -31,12 +34,12 @@
 >>>>>>> master
 =======
       <change beforePath="$PROJECT_DIR$/app/Notifications/PasswordResetNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/PasswordResetNotification.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+>>>>>>> develop
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/member/main_menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/member/mypage_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
 >>>>>>> develop
     </list>
@@ -170,16 +173,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts/member" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/views/layouts/member" />
       <recent name="$PROJECT_DIR$/resources/views/auth/passwords/old" />
       <recent name="$PROJECT_DIR$/storage/images" />
       <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/storage/app/images/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/member" />
@@ -245,6 +248,11 @@
       <workItem from="1594901341277" duration="168000" />
       <workItem from="1594901512278" duration="3671000" />
       <workItem from="1594905545944" duration="3352000" />
+<<<<<<< HEAD
+>>>>>>> develop
+=======
+      <workItem from="1595067039479" duration="6283000" />
+      <workItem from="1595106529795" duration="6733000" />
 >>>>>>> develop
     </task>
     <servers />
@@ -285,17 +293,18 @@
     </state>
     <state x="226" y="240" key="NewPhpFileDialog/0.23.1321.745@0.23.1321.745" timestamp="1594901531036" />
     <state x="226" y="240" key="NewPhpFileDialog/0.23.1322.745@0.23.1322.745" timestamp="1594907404126" />
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1594905563122">
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1595106545647">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1594905563122" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1321.745@0.23.1321.745" timestamp="1595106545647" />
+    <state x="339" y="228" key="com.intellij.ide.util.TipDialog/0.23.1323.745@0.23.1323.745" timestamp="1595071249909" />
     <state x="372" y="217" width="667" height="486" key="find.popup" timestamp="1593927413882">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
     <state x="372" y="217" width="667" height="486" key="find.popup/0.23.1321.745@0.23.1321.745" timestamp="1593927413882" />
-    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1594908122993">
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1595110726031">
       <screen x="0" y="23" width="1321" height="745" />
     </state>
-    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1594908122993" />
+    <state x="225" y="46" width="670" height="676" key="search.everywhere.popup/0.23.1321.745@0.23.1321.745" timestamp="1595110726031" />
   </component>
 </project>

@@ -39,5 +39,9 @@
     "Before proceeding, please check your email for a verification link." : "メールでパスワード再設定用のURLを確認してください。",
     "If you did not receive the email" : "メールが届かない場合",
     "click here to request another" : "ここをクリックして別のメールアドレスを指定してください",
-    "Accepted your inquiry" : "お問い合わせを受け付けました。"
+    "Accepted your inquiry" : "お問い合わせを受け付けました。",
+    "Send." : "送信",
+    "Confirm." : "確認",
+    "Inquiry accepted" : "お問い合わせを受け付けました",
+    "Back." : "戻る"
 }
