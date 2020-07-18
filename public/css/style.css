@@ -671,7 +671,7 @@ ul {
         .register_label-file-active:last-child {
           margin-right: 0; }
 
-  .register_input {
+  .register_input,.input {
     width: 100%;
     height: 50px;
     display: block;
@@ -700,10 +700,11 @@ ul {
         margin-bottom: 15px;
 }
 
-  .register_submit,.submit_reset,.submit_reset2,.submit_reset3{
+  .register_submit,.submit_reset,.submit_reset2,.submit_reset3,.submit_send{
     width: 100px;
     height: 50px;
-    background: #3f8d69;
+    background: #64996b;
+     color: #3c3c3c;
     font-size: 18px;
     text-align: center;
     display: block;
@@ -713,6 +714,7 @@ ul {
     transition: 0.25s;
     box-shadow: 2px 2px #777777;
     box-sizing: border-box;
+    line-height: 50px;
   }
 
   .submit_reset2{
@@ -723,7 +725,7 @@ ul {
     width: 310px;
 }
 
-  .register_submit:hover,.submit_reset:hover,.submit_reset2:hover,.submit_reset3:hover{
+  .register_submit:hover,.submit_reset:hover,.submit_reset2:hover,.submit_reset3:hover,.submit_send:hover{
     background: #f9ffb9;
     border-bottom: 2px solid #777777;
     box-shadow: none;
@@ -731,7 +733,7 @@ ul {
     cursor: grab;
   }
 
-  .register_textarea {
+  .register_textarea,.textarea {
     display: block;
     width: 100%;
     font-size: 16px;
@@ -744,6 +746,10 @@ ul {
     box-shadow: 2px 2px #777777;
     border-radius: 5px;
     word-wrap: break-word; }
+
+    .textarea{
+        height: 200px;
+    }
 
   .register_file {
     opacity: 0; }
@@ -1767,4 +1773,32 @@ ul {
 .input_item2{
     font-size: 14px;
     text-align: right;
+}
+
+.section_contact{
+    width: 70%;
+    margin:0 auto;
+}
+
+.mail_form,.label,.label_item{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.link_back4{
+    border: none;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    font-size: 16px;
+    color: #333333;
+    background: #d6d6d6;
+}
+
+.link_back4:hover{
+    color: #3c3c3c;
+    background: #f9ffb9;
+    transition: 0.25s;
 }

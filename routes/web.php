@@ -69,3 +69,5 @@ Route::post('/password/reset','Auth\ResetPasswordController@reset')->name('passw
 Route::get('trade/{id}','HomeController@simple')->name('tradeSimple');
 
 Route::get('/contact','ContactController@show')->name('contact');
+Route::post('/contact/confirm','ContactController@confirm')->name('confirm');
+Route::post('/contact/send','ContactController@send')->name('send');
