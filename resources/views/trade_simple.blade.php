@@ -9,11 +9,11 @@
 @include('layouts.member.navi')
 
 <!-- フラッシュメッセージ -->
-@if (session('flash_message'))
-    <div class="alert js-alert" role="alert">
-        {{ session('flash_message') }}
-    </div>
-@endif
+{{--@if (session('flash_message'))--}}
+{{--    <div class="alert js-alert" role="alert">--}}
+{{--        {{ session('flash_message') }}--}}
+{{--    </div>--}}
+{{--@endif--}}
 
 @section('section_title','出品情報')
 @section('main_content')
@@ -53,7 +53,16 @@
         </div>
         <div class="btn_space">
             @if(Auth::check())
-            <a href=""><span class="submit_bid">{{ __('bid.') }}</span></a>
+
+{{--            <a href=""><span class="submit_bid">{{ __('bid.') }}</span></a>--}}
+             <form class="form_bid" method="POST" action="{{ route('bidUpdate',$products->id) }}">
+                 @csrf
+                 <input type="checkbox" name="trade_flag" @if($trade_flag === true) checked @endif>
+                 @error('trade_flag')
+                 <p>{{ $message }}</p>
+                 @enderror
+                 <input type="submit" class="submit_bid" value="{{ __('bid.') }}">
+             </form>
             @else
             <a href="{{ route('login') }}"><span class="submit_bid">{{ __('Please Login.') }}</span></a>
             @endif

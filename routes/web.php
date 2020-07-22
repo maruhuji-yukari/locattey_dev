@@ -50,11 +50,17 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('member/register/edit','Member\MypageController@edit')->name('memberEdit');
     Route::post('member/register/update','Member\MypageController@update')->name('memberUpdate');
 
-    Route::get('member/{id}/remove','Member\ProductsController@remove')->name('tradeRemove');
-    Route::post('member/{id}/delete','Member\ProductsController@delete')->name('tradeDelete');
+    Route::get('member/remove/{id}','Member\ProductsController@remove')->name('tradeRemove');
+    Route::post('member/delete/{id}','Member\ProductsController@delete')->name('tradeDelete');
 
     Route::get('member/delete_preview','Member\MypageController@preview')->name('deletePreview');
     Route::post('member/delete',"Member\MypageController@delete")->name('deleteMember');
+
+    Route::get('member/bidItem/{id}','Member\BidController@showBidItem')->name('BidItem');
+    Route::post('member/detailBidItem/{id}','Member\BidController@bidItem')->name('detailBidItem');
+
+    Route::get('trade/{id}','Member\BidController@simple')->name('tradeSimple');
+    Route::post('trade/change/{id}','Member\BidController@update')->name('bidUpdate');
 });
 
 Route::get('auth/confirm','Auth\ConfirmPasswordController@showConfirmForm')->name('showConfirmForm');
@@ -65,8 +71,6 @@ Route::post('/password/email','Auth\ForgotPasswordController@sendResetLinkEmail'
 
 Route::get('/password/reset/{token}','Auth\ResetPasswordController@showResetForm')->name('showResetForm');
 Route::post('/password/reset','Auth\ResetPasswordController@reset')->name('password.update');
-
-Route::get('trade/{id}','HomeController@simple')->name('tradeSimple');
 
 Route::get('/contact','ContactController@show')->name('contact');
 Route::post('/contact/confirm','ContactController@confirm')->name('confirm');

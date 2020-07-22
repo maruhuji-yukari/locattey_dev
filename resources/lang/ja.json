@@ -8,7 +8,7 @@
     "Edited." : "修正しました",
     "Edit." : "修正",
     "New_TalkLog" : "最新トーク履歴",
-    "Register" : "登録",
+    "Register." : "登録",
     "Registered." : "登録しました",
     "Remember Me" : "パスワードを記憶する",
     "Invalid operation was performed." : "無効なURLです。",
@@ -42,5 +42,6 @@
     "Send." : "送信",
     "Confirm." : "確認",
     "Inquiry accepted" : "お問い合わせを受け付けました",
-    "Back." : "戻る"
+    "Back." : "戻る",
+    "Bid." : "入札しました!"
 }
