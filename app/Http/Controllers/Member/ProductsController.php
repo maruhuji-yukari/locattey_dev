@@ -215,5 +215,16 @@ class ProductsController extends Controller
         $products->fill($request->all())->delete();
         return redirect('member/trade/list')->with('flash_message', __('CompleteDelete'));
     }
+
+
+    //=================
+    //入札ページへ遷移
+    //=================
+
+    //入札ボタンを押した時の挙動
+    public function move($id){
+        //trade_flag = 2にする。2の場合検索結果やリストに表示されなくなる。
+
+    }
 }
 

@@ -19,4 +19,8 @@ class Product extends Model
     public function categories(){
         return $this->belongsTo('App\Models\Product','categories_id');
     }
+
+    protected $casts = [
+      'trade_flag' => 'boolean'
+    ];
 }

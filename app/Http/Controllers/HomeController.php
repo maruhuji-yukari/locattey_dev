@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BidRequest;
 use App\Models\Categories;
 use App\Models\Product;
 use App\Models\User;
@@ -51,16 +52,4 @@ class HomeController extends Controller
         $products2 = Product::where('trade_flag','=',1);
     }
 
-    //個別ページ実装(view)
-    public function simple($id){
-        $products = Product::find($id);
-        $u_id = $products->users_id;
-        $c_id =$products->categories_id;
-        $images = ['product_image2','product_image3','product_image4','product_image5'];
-        $categories_id = Categories::find($c_id);
-        $users_id = User::find($u_id);
-
-
-        return view('trade_simple',compact('products','categories_id','users_id','images'));
-    }
 }

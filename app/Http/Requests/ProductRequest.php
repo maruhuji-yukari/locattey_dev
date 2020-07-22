@@ -33,6 +33,7 @@ class ProductRequest extends FormRequest
             'product_image4' => 'nullable | file | mimes:jpeg,jpg,png,gif | max:30700',
             'product_image5' => 'nullable | file | mimes:jpeg,jpg,png,gif | max:30700',
             'categories_id' => 'required | Integer | max:22',
+            'trade_flag' => 'bool'
         ];
     }
 }
