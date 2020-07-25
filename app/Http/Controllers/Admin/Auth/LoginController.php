@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
-
+namespace App\Http\Controllers\Admin\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use http\Env\Request;
-use Illuminate\Http\Response;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class LoginController extends Controller
 {
@@ -29,46 +28,35 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = RouteServiceProvider::ADMIN_HOME;
 
+    protected function guard()
+    {
+        return Auth::guard('admin');
+    }
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-//    public function __construct()
-//    {
-//        $this->middleware('guest')->except('logout');
-//    }
-
     public function __construct()
     {
-        $this->middleware('guest:user')->except('logout');
+        $this->middleware('guest:admin')->except('logout');
     }
-
-    //guard
-    protected function guard()
-    {
-        return Auth::guard('user');
-    }
-
-    //ログイン画面
-    //user ver
     public function showLoginForm()
     {
-//        return view('auth.login');
-        return view('login');
+        return view('admin.auth.login');
     }
 
-//    //ログアウト
-//    public function logout(Request $request){
-//        Auth::guard('user')->logout();
-//        return $this->loggedOut($request);
-//    }
-//
-//    //ログアウト後のリダイレクト
-//    public function loggedOut(\Illuminate\Http\Request $request)
-//    {
-//        return redirect(route('logout'));
-//    }
+    public function logout(Request $request)
+    {
+        Auth::guard('admin')->logout();
+
+        return $this->loggedOut($request);
+    }
+
+    public function loggedOut(Request $request)
+    {
+        return redirect(route('admin.login'));
+    }
 }

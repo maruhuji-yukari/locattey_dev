@@ -17,7 +17,7 @@
 
 @section('section_title','修正する')
 @section('main_content')
-    <form action="{{ route('tradeUpdate',$products->id) }}" method="POST" class="register_form" enctype='multipart/form-data'>
+    <form action="{{ route('tradeUpdate',$products->id) }}" method="POST" class="register_form">
         @csrf
         <label for="product_name" class="register_label">出品タイトル(50文字以内):</label>
         <input type="text" id="product_name" name="product_name" class="register_input @error('product_name') is-invalid @enderror" placeholder="出品タイトル" required value="{{ $products->product_name }}">
@@ -59,10 +59,19 @@
         <a href="{{ route('editImage',$products->id) }}"><span class="submit_reUploads">画像を変更する</span></a>
 
         <input type="text" name="updated_at" hidden value="{{ $updated_at }}">
-
+        <input type="text" name="id" hidden value="{{ $id }}">
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div class="btn_space_edit">
             <input type="submit" class="edit_submit" value="{{ __('Edit.') }}">
-            <a href="{{ route('tradeRemove',$products->id) }}"><span class="submit_delete">{{ __('Deleted.') }}</span></a>
+            <a href="{{ route('tradeRemove',$products->id) }}"><span>{{ __('Deleted.') }}</span></a>
         </div>
         <p class="link_back"><a href="{{ route('tradeList') }}">一覧へ戻る</a></p>
     </form>

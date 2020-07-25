@@ -2,7 +2,7 @@
 
 namespace App\Mail;
 
-use App\Models\Contact;
+use App\Models\Contacts;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -19,7 +19,7 @@ class ContactSendmail extends Mailable
      *
      * @return void
      */
-    public function __construct(Contact $contact)
+    public function __construct(Contacts $contact)
     {
         $this->contact = $contact;
     }

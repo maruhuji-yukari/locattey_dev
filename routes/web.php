@@ -60,9 +60,10 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('member/bidItem/{id}','Member\BidController@showBidItem')->name('BidItem');
     Route::post('member/detailBidItem/{id}','Member\BidController@bidItem')->name('detailBidItem');
 
-    Route::get('trade/{id}','Member\BidController@simple')->name('tradeSimple');
-    Route::post('trade/change/{id}','Member\BidController@update')->name('bidUpdate');
+    Route::post('trade/change/{id}','Member\BidsController@bid')->name('bidUpdate');
 });
+
+Route::get('trade/{id}','Member\BidsController@simple')->name('tradeSimple');
 
 Route::get('auth/confirm','Auth\ConfirmPasswordController@showConfirmForm')->name('showConfirmForm');
 Route::post('auth/confirm','Auth\ConfirmPasswordController@confirm')->name('password.confirm');
@@ -76,3 +77,19 @@ Route::post('/password/reset','Auth\ResetPasswordController@reset')->name('passw
 Route::get('/contact','ContactController@show')->name('contact');
 Route::post('/contact/confirm','ContactController@confirm')->name('confirm');
 Route::post('/contact/send','ContactController@send')->name('send');
+
+//管理人画面関係
+//未ログイン
+Route::get('/admin/login','Admin\Auth\LoginController@showLoginForm')->name('admin.login');
+Route::post('/admin/login','Admin\Auth\LoginController@login')->name('admin.login');
+Route::get('/admin/register','Admin\Auth\RegisterController@showRegistrationForm')->name('admin.register');
+Route::post('/admin/register','Admin\Auth\RegisterController@register')->name('admin.register');
+Route::get('/admin/password/reset','Admin\Auth\ForgotPasswordController@showLinkRequestFormAdmin')->name('admin.password.email.send');
+Route::post('/admin/password/reset/email','Admin\Auth\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+
+
+//ログイン
+Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function(){
+    Route::get('/home','Admin\HomeController@index')->name('admin.home');
+    Route::post('logout','Admin\Auth\LoginController@logout')->name('admin.logout');
+});
