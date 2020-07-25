@@ -14,7 +14,7 @@ class Categories extends Model
 
     public $primaryKey = 'categories.id';
 
-    public function product(){
+    public function products(){
         return $this->hasMany('App\Models\Categories')->orderBy('id','DESC');
     }
 

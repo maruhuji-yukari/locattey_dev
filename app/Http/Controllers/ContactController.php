@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
-use App\Models\Contact;
+use App\Models\Contacts;
 use Illuminate\Http\Request;
 use App\Mail\ContactSendmail;
 use Illuminate\Support\Facades\Mail;
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Mail;
 class ContactController extends Controller
 {
     public function show(){
-        $reply = Contact::$reply;
+        $reply = Contacts::$reply;
 
         return view('contact',compact('reply'));
     }
@@ -19,7 +19,7 @@ class ContactController extends Controller
     public function confirm(ContactRequest $request){
 
             //送信
-            $contact = new Contact($request->all());
+            $contact = new Contacts($request->all());
             $contact->fill($request->all())->save();
 
             Mail::to($contact->email)->send(new ContactSendmail($contact));

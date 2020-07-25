@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ChangeTradeFlagToProductsTable extends Migration
+class AddColumnToUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class ChangeTradeFlagToProductsTable extends Migration
      */
     public function up()
     {
-        Schema::table('products', function (Blueprint $table) {
-            $table->integer('trade_flag')->default(0)->change();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('zip',20)->nullable();
+            $table->string('tel',12)->nullable();
+            $table->string('prof_img')->default('me.jpg');
         });
     }
 
@@ -25,7 +27,7 @@ class ChangeTradeFlagToProductsTable extends Migration
      */
     public function down()
     {
-        Schema::table('products', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             //
         });
     }

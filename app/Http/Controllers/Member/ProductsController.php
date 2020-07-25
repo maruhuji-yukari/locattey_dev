@@ -7,10 +7,9 @@ use App\Http\Requests\ProductRequest;
 use App\Http\Requests\ProductsEditRequest;
 use App\Http\Requests\ProductsUploadsOnly;
 use App\Models\Categories;
-use App\Models\Product;
+use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use function GuzzleHttp\Promise\all;
 
 class ProductsController extends Controller
 {
@@ -35,15 +34,15 @@ class ProductsController extends Controller
     //=============================
     public function create(ProductRequest $request)
     {
-        $product = new Product();
+        $product = new Products();
         //その他
         $product->product_name = $request->product_name;
         $product->product_describe = $request->product_describe;
         $product->categories_id = $request->categories_id;
         $product->users_id = Auth::id();
-        $product->trade_flag = 0;
         $product->created_at = now();
         $product->updated_at = now();
+        $product->trade_flag = 0;
 
         //upload(1枚目は必須)
         $tmpFile = $request->file('product_image1')->store('images/images');
@@ -85,7 +84,7 @@ class ProductsController extends Controller
 
     public function list()
     {
-        $trades = Product::where('users_id', Auth::id())->orderBy('id', 'desc')->get();
+        $trades = Products::where('users_id', Auth::id())->orderBy('id', 'desc')->get();
         return view('member.trade_list', compact('trades'));
     }
 
@@ -95,7 +94,7 @@ class ProductsController extends Controller
     public function edit($id)
     {
         //出品情報
-        $products = Product::firstWhere('id', $id);
+        $products = Products::find($id);
         //カテゴリー一覧取得
         $categories = Categories::all();
         //該当カテゴリーid取得
@@ -104,26 +103,27 @@ class ProductsController extends Controller
         $c_name = $categories->where('id', $c_id);
         //更新日時変更
         $updated_at = now();
-        return view('member.trade_edit', compact('products', 'categories', 'c_name','updated_at'));
+        //id
+        $id = $products->id;
+        return view('member.trade_edit', compact('products', 'categories', 'c_name','updated_at','id'));
     }
 
     //=============================
     //修正する・画像以外(実装)
     //=============================
-    public function update(ProductsEditRequest $request, $id)
+    public function update($id,ProductsEditRequest $request)
     {
-
         //不正遷移を防止
         if (!ctype_digit($id)) {
             return redirect('index')->with('flash_message', __('Invalid operation was performed.'));
         }
 
         //情報取得
-        $products = Product::firstWhere('id', $id);
-
+        $products = Products::find($id);
         //修正実装
         $products->fill($request->all())->save();
-
+        ($request->all());
+        //dd($products);
         return redirect('member/trade/list')->with('flash_message', __('Edited.'));
     }
 
@@ -137,7 +137,7 @@ class ProductsController extends Controller
         $product_images = ['product_image2', 'product_image3', 'product_image4', 'product_image5'];
 
         //DBからデータを取得
-        $products = Product::firstWhere('id', $id);
+        $products = Products::firstWhere('id', $id);
 
         return view('member.trade_edit_images', compact('product_images', 'products'));
     }
@@ -156,7 +156,7 @@ class ProductsController extends Controller
         //uploadsし直し
         //変更しない場合はそのまま、変更する場合のみ変更作業
         //DBデータ取得
-        $DBdata = Product::find($id)->first();
+        $DBdata = Products::find($id)->first();
 
         //foreach用
         $product_images = ['product_image2', 'product_image3', 'product_image4', 'product_image5'];
@@ -194,7 +194,7 @@ class ProductsController extends Controller
 
     //削除確認ページ(view)
     public function remove($id){
-        $DBdata = Product::find($id);
+        $DBdata = Products::find($id);
         $categories = Categories::all();
         $users_id = Auth::id();
         $product_images = ['product_image1','product_image2', 'product_image3', 'product_image4', 'product_image5'];
@@ -206,11 +206,10 @@ class ProductsController extends Controller
         return view('member/tradeRemove',compact('DBdata','categories','product_images','users_id','c_name'));
     }
 
-
     //出品情報削除
     public function  delete(Request $request,$id){
         //該当するデータを取得
-        $products = Product::find($id);
+        $products = Products::find($id);
         //delete(物理削除)
         $products->fill($request->all())->delete();
         return redirect('member/trade/list')->with('flash_message', __('CompleteDelete'));
@@ -227,4 +226,3 @@ class ProductsController extends Controller
 
     }
 }
-
